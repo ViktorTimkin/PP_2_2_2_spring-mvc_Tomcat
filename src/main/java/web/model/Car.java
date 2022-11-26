@@ -1,5 +1,8 @@
-package web.Model;
+package web.model;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Car {
     private int id;
     private String model;
@@ -9,6 +12,9 @@ public class Car {
         this.id = id;
         this.model = model;
         this.colour = colour;
+    }
+
+    public Car() {
     }
 
     public int getId() {
